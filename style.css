@@ -1,0 +1,147 @@
+/* جعل الخلفية داكنة */
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق اللوجو */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* تنسيق الألوان */
+.green {
+    color: #00FF00;
+}
+
+.white {
+    color: white;
+}
+
+/* تنسيق اسمك */
+h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* جعل Frontend Developer باللون الأخضر */
+.frontend {
+    font-size: 24px;
+    color: #00FF00;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+/* تنسيق العناوين مثل About, Skills, Projects */
+h2 {
+    color: #00FF00;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* تنسيق الأقسام */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+/* ضبط القائمة العلوية */
+nav {
+    background: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* تصميم اللينكات */
+.links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* تصميم الأزرار في الشريط العلوي */
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* تغيير لون الروابط عند تمرير الماوس */
+.links a:hover {
+    color: #00FF00;
+}
+
+/* تغيير لون العناوين الرئيسية عند تمرير الماوس */
+h2:hover {
+    color: white;
+}
+
+/* تصميم الصورة */
+.div-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* جعل النصوص تظهر بالكامل */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* تصميم أيقونات التطبيقات */
+.social-links a {
+    font-size: 20px;
+    color: #00FF00;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+/* تغيير لون الأيقونات عند تمرير الماوس */
+.social-links a:hover {
+    color: white;
+}
+
+/* جعل الموقع متجاوب مع كل الأجهزة */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .links {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    .frontend {
+        font-size: 20px;
+    }
+    
+    .div-img img {
+        width: 120px;
+        height: 120px;
+    }
+}
